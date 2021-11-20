@@ -99,6 +99,7 @@
             this.btCong.Text = "+";
             this.btCong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btCong.UseVisualStyleBackColor = false;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // txtSoThu1
             // 
