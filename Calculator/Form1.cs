@@ -25,5 +25,14 @@ namespace Calculator
             kQ = a + b;
             txtKQ.Text = kQ.ToString();
         }
+
+        private void btTru_Click(object sender, EventArgs e)
+        {
+            int a, b, kQ;
+            a = int.Parse(txtSoThu1.Text);
+            b = int.Parse(txtSoThu2.Text);
+            kQ = a - b;
+            txtKQ.Text = kQ.ToString();
+        }
     }
 }

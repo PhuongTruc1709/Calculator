@@ -36,6 +36,7 @@
             this.txtSoThu1 = new System.Windows.Forms.TextBox();
             this.txtSoThu2 = new System.Windows.Forms.TextBox();
             this.txtKQ = new System.Windows.Forms.TextBox();
+            this.btTru = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             lbTinhToan = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
@@ -122,12 +123,27 @@
             this.txtKQ.Size = new System.Drawing.Size(187, 20);
             this.txtKQ.TabIndex = 8;
             // 
+            // btTru
+            // 
+            this.btTru.BackColor = System.Drawing.Color.Green;
+            this.btTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.btTru.ForeColor = System.Drawing.SystemColors.Window;
+            this.btTru.Location = new System.Drawing.Point(177, 189);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(39, 39);
+            this.btTru.TabIndex = 9;
+            this.btTru.Text = "-";
+            this.btTru.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btTru.UseVisualStyleBackColor = false;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(325, 260);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(label3);
             this.Controls.Add(this.txtSoThu2);
@@ -149,6 +165,7 @@
         private System.Windows.Forms.TextBox txtSoThu1;
         private System.Windows.Forms.TextBox txtSoThu2;
         private System.Windows.Forms.TextBox txtKQ;
+        private System.Windows.Forms.Button btTru;
     }
 }
 
